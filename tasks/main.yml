@@ -11,7 +11,7 @@
   tags: install_dependencies
 
 - name: Get Instance Metadata 
-  action: ec2_facts
+  action: ec2_metadata_facts
 
 - name: Fetch the CodeDeploy install script
   get_url:
