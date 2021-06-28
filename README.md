@@ -1,5 +1,6 @@
 Ansible Role: codedeploy-agent
 =========
+[![CI](https://github.com/austincloudguru/ansible-role-codedeploy-agent/workflows/CI/badge.svg?event=push)](https://github.com/austincloudguru/ansible-role-codedeploy-agent/actions?query=workflow%3ACI) 
 
 This role installs AWS's CodeDeploy agent.
 
