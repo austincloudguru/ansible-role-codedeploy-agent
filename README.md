@@ -25,7 +25,7 @@ Example Playbook
 
     - hosts: servers
       vars:
-         ansible_ec2_placement_region: us-east-1     #<- if local datacetner
+         ansible_ec2_placement_region: us-east-1
       roles:
          - AustinCloudGuru.codedeploy-agent
 
