@@ -7,6 +7,8 @@ name: CI
     branches:
       - master
   push:
+    branches-ignore:
+      - master
 
 defaults:
   run:

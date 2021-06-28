@@ -3,5 +3,6 @@
 *.retry
 
 .idea/
+.vscode/
 molecule/default/tests/__pycache__/
 **/.cache
