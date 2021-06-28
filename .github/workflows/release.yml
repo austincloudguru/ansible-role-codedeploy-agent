@@ -8,12 +8,12 @@
 name: Release
 'on':
   push:
-    tags:
-      - '*'
+    branches:
+      - master
 
 defaults:
   run:
-    working-directory: 'austincloudguru.common'
+    working-directory: 'austincloudguru.codedeploy-agent'
 
 jobs:
 
@@ -24,12 +24,19 @@ jobs:
       - name: Check out the codebase.
         uses: actions/checkout@v2
         with:
-          path: 'austincloudguru.common'
+          path: 'austincloudguru.codedeploy-agent'
 
       - name: Set up Python 3.
         uses: actions/setup-python@v2
         with:
           python-version: '3.x'
+      
+      - name: Bump version and push tag
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
+        id: tag_version
+        uses: mathieudutour/github-tag-action@v5.5
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Install Ansible.
         run: pip3 install ansible-base
