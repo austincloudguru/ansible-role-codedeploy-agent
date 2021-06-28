@@ -1,5 +1,6 @@
 Ansible Role: codedeploy-agent
 =========
+[![CI](https://github.com/austincloudguru/ansible-role-codedeploy-agent/workflows/CI/badge.svg?event=push)](https://github.com/austincloudguru/ansible-role-codedeploy-agent/actions?query=workflow%3ACI) 
 
 This role installs AWS's CodeDeploy agent.
 
@@ -25,7 +26,7 @@ Example Playbook
 
     - hosts: servers
       vars:
-         ansible_ec2_placement_region: us-east-1     #<- if local datacetner
+         ansible_ec2_placement_region: us-east-1
       roles:
          - AustinCloudGuru.codedeploy-agent
 

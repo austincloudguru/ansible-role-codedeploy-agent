@@ -1,5 +1,6 @@
 ---
 dependencies:
-  - ruby
+  - ruby-full
   - wget
-  - python-pip
+
+service_name: codedeploy-agent

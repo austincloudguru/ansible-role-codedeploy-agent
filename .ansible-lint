@@ -1,0 +1,8 @@
+---
+skip_list:
+  - '106'
+  - '204'
+  - 'no-changed-when'
+
+mock_roles:
+  - ansible-role-common
