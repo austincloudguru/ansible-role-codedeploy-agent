@@ -4,9 +4,9 @@ name: CI
   schedule:
     - cron: "0 8 * * *"
   pull_request:
-  push:
     branches:
       - master
+  push:
 
 defaults:
   run:
