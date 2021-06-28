@@ -9,11 +9,15 @@ galaxy_info:
   platforms:
   - name: Amazon
     versions:
-    - all
+      - all
   - name: Ubuntu
     versions:
-    - bionic
-    - focal
+      - bionic
+      - focal
+  - name: EL
+    versions:
+      - 7
+      - 8
 
   galaxy_tags: 
     - amazon
