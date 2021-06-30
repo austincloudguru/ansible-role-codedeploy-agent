@@ -1,5 +1,5 @@
 ---
-name: CI
+name: Molecule
 'on':
   schedule:
     - cron: "0 8 * * *"
@@ -7,8 +7,7 @@ name: CI
     branches:
       - master
   push:
-    branches-ignore:
-      - master
+
 
 defaults:
   run:
@@ -31,7 +30,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install test dependencies.
-        run: python -m pip install yamllint
+        run: pip3 install yamllint
 
       - name: Lint code.
         run: |
@@ -43,11 +42,12 @@ jobs:
     strategy:
       matrix:
         distro:
-          - ubuntu:20.04
+          - ubuntu:16.04
           - ubuntu:18.04
-          - amazonlinux:2
-          - centos:8
+          - ubuntu:20.04
           - centos:7
+          - centos:8
+          - amazonlinux:2
 
     steps:
       - name: Check out the codebase.
@@ -61,7 +61,7 @@ jobs:
           python-version: '3.x'
 
       - name: Install test dependencies.
-        run: python -m pip install ansible molecule[docker] docker
+        run: pip3 install ansible molecule[docker] docker testinfra
 
       - name: Run Molecule tests.
         run: molecule test
