@@ -1,11 +1,11 @@
 galaxy_info:
-  role_name: codedeploy-agent
+  role_name: codedeploy_agent
+  namespace: austincloudguru
   author: Mark Honomichl
   description: Installs Code Deploy
   company: AustinCloudGuru
-  namespace: ausgincloudguru
   license: MIT
-  min_ansible_version: 2.0
+  min_ansible_version: "2.9"
   platforms:
   - name: Amazon
     versions:
@@ -16,8 +16,7 @@ galaxy_info:
       - focal
   - name: EL
     versions:
-      - 7
-      - 8
+      - all
 
   galaxy_tags: 
     - amazon

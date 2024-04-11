@@ -1,6 +1,6 @@
 Ansible Role: codedeploy-agent
 =========
-[![Molecule](https://github.com/austincloudguru/ansible-role-codedeploy-agent/workflows/Molecule/badge.svg?event=push)](https://github.com/austincloudguru/ansible-role-codedeploy-agent/actions?query=workflow%3AMolecule)
+[![Molecule](https://github.com/austincloudguru/ansible-role-codedeploy-agent/workflows/Molecule/badge.svg)](https://github.com/austincloudguru/ansible-role-codedeploy-agent/actions?query=workflow%3AMolecule)
 ![Latest Version](https://img.shields.io/github/v/tag/austincloudguru/ansible-role-codedeploy-agent?sort=semver&label=Latest%20Version) 
 [![License](https://img.shields.io/github/license/austincloudguru/ansible-role-codedeploy-agent)](https://github.com/austincloudguru/ansible-role-codedeploy-agent/blob/master/LICENSE)
 
